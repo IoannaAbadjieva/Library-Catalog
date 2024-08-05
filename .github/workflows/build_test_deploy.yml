@@ -28,5 +28,8 @@ jobs:
     - name: Start Frontend
       run: npm run start-fe &
 
+    - name: Install Playwright
+      run: npx playwright install
+      
     - name: Start UI Tests
       run: npm run test:ui
